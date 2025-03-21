@@ -32,15 +32,52 @@ function App() {
 
     const [isAddFlatButtonVisible, setAddFlatButtonVisibility] = useState(true);
     const [isAddFlatFormVisible, setAddFlatFormVisibility] = useState(false);
+    const [name, setName] = useState('');
+    const [location, setLocation] = useState('');
+    const [price, setPrice] = useState('');
+    const [image, setImage] = useState('');
+    const [available, setAvailable] = useState(false);
 
-    const toggleAddFlatForm = (event) => {
+    const toggleAddFlatForm = () => {
         setAddFlatButtonVisibility(!isAddFlatButtonVisible);
         setAddFlatFormVisibility(!isAddFlatFormVisible);
     };
 
-    const handleSubmit = (event) => {
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+    }
+
+    const handleLocationChange = (event) => {
+        setLocation(event.target.value);
+    }
+
+    const handlePriceChange = (event) => {
+        setPrice(event.target.value);
+    }
+
+    const handleImageChange = (event) => {
+        setImage(event.target.value);
+    }
+
+    const handleAvailableChange = (event) => {
+        setAvailable(event.target.checked);
+    }
+
+    const handleAddFlatFormToList = (event) => {
         event.preventDefault(); // Prevent the default form submission
-        alert('Form Submit Prevented');
+
+        let newFlat =
+            {
+                id: apartments.length + 1,
+                name: '{event.target.name.value}',
+                location: '{event.target.location.value}',
+                price: '{event.target.price.value}',
+                available: event.target.available.value,
+                image: '{event.target.imageURL.value}',
+            }
+
+        apartments.push(newFlat);
+
     };
 
     return (
@@ -49,20 +86,19 @@ function App() {
 
             <h1>Super Flats</h1>
 
-
             { isAddFlatFormVisible ?
 
                 <div>
 
                     <h2>Add Flat</h2>
 
-                    <form onSubmit={handleSubmit} className='form'>
-                        <label className='label'>Name: <input type="text" name="name" value='name' /></label>
-                        <label className='label'>Location: <input type="text" name="location" value='location' /></label>
-                        <label className='label'>Price: <input type="text" name="price" value='price' /></label>
-                        <label className='label'>Image URL: <input type="text" name="imageURL" value='image' /></label>
-                        <label className='label'>Available? <input type="checkbox" name="available" value='true' /></label>
-                        <input type="submit" value="Submit"  className='button'/>
+                    <form className='form'>
+                        <label className='label'>Name: <input type="text" id="name" value={name} onChange={handleNameChange} /></label>
+                        <label className='label'>Location: <input type="text" name="location" value={location} onChange={handleLocationChange} /></label>
+                        <label className='label'>Price: <input type="text" name="price" value={price} onChange={handlePriceChange} /></label>
+                        <label className='label'>Image URL: <input type="text" name="imageURL" value={image} onChange={handleImageChange} /></label>
+                        <label className='label'>Available? <input type="checkbox" name="available" value={Number(available)} onChange={handleAvailableChange} /></label>
+                        <input type="submit" value="Add Flat"  className='button' onClick={handleAddFlatFormToList}/>
                     </form>
 
                 </div>
@@ -82,9 +118,7 @@ function App() {
                                 <p>Location: {apartment.location}</p>
                                 <p>Price: {apartment.price}</p>
                                 <p>{apartment.available}</p>
-
-                                // add image here
-
+                                <p><img src={apartment.image} alt='image' /></p>
                             </div>
                         </li>
                     </div>
