@@ -1,0 +1,84 @@
+hyperskill_project:
+  id: 444
+  ide_files: https://hyperskill.org/api/projects/444/additional-files/additional_files.json
+  is_template_based: true
+  use_ide: true
+update_date: "Fri, 21 Mar 2025 20:01:03 UTC"
+stages:
+  - id: 2582
+    step: 44383
+    is_completed: true
+  - id: 2583
+    step: 44384
+    is_completed: true
+  - id: 2584
+    step: 44385
+    is_completed: false
+  - id: 2585
+    step: 44386
+    is_completed: false
+topics:
+  0:
+    - title: create-react-app
+      theory_id: 12196
+    - title: Overview of the basic program
+      theory_id: 14577
+    - title: Operating systems
+      theory_id: 9704
+    - title: Command line overview
+      theory_id: 8977
+    - title: Parameters and options
+      theory_id: 9746
+    - title: World Wide Web
+      theory_id: 6633
+    - title: Block-level elements
+      theory_id: 7271
+    - title: DOM
+      theory_id: 8635
+    - title: Introduction to React
+      theory_id: 10203
+    - title: Introduction to JSX
+      theory_id: 15986
+    - title: Functional components
+      theory_id: 16916
+    - title: Installation
+      theory_id: 43945
+    - title: Introduction to rendering components
+      theory_id: 38440
+    - title: Overview of the basic program
+      theory_id: 39013
+    - title: Introduction to JavaScript
+      theory_id: 8016
+    - title: Web development
+      theory_id: 13931
+    - title: Libraries
+      theory_id: 8504
+    - title: Frameworks
+      theory_id: 6701
+    - title: Files
+      theory_id: 13025
+    - title: HTML Basics
+      theory_id: 47192
+    - title: Tags and Attributes
+      theory_id: 7536
+    - title: HTML page structure
+      theory_id: 6491
+    - title: What is npm
+      theory_id: 13256
+  1:
+    - title: JSX rules
+      theory_id: 40028
+    - title: Properties
+      theory_id: 39006
+    - title: State
+      theory_id: 40761
+    - title: Conditional Rendering
+      theory_id: 38999
+  2:
+    - title: Class components
+      theory_id: 40339
+    - title: Basics of forms
+      theory_id: 39769
+  3:
+    - title: Styling components
+      theory_id: 38376

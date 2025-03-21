@@ -1,0 +1,28 @@
+<div class="step-text">
+<p></p><h5 id="description">Description</h5><p>In this stage, you are tasked with showing the list of flats with their details, including name, location, price, and availability status. The app should include <code class="language-javascript">header</code> and <code class="language-javascript">main</code> tags. The header should have a <code class="language-javascript">&lt;h1&gt;</code> title and the main should have a <code class="language-javascript">&lt;h2&gt;</code> title and an <code class="language-javascript">&lt;ul&gt;</code> tag for the list of flats.</p><p>Use the below array of objects for the flats' details:</p><pre><code class="language-javascript"> [
+        {
+            id: 1,
+            name: 'Cozy Apartment',
+            location: 'Downtown',
+            price: '$1500/month',
+            available: true,
+            image: 'https://example.com/cozy-apartment.jpg',
+        },
+        {
+            id: 2,
+            name: 'Modern Loft',
+            location: 'Midtown',
+            price: '$1800/month',
+            available: false,
+            image: 'https://example.com/modern-loft.jpg',
+        },
+        {
+            id: 3,
+            name: 'Charming Studio',
+            location: 'Uptown',
+            price: '$1200/month',
+            available: true,
+            image: 'https://example.com/charming-studio.jpg',
+        },
+  ]</code></pre><p>Pay attention to the proper use of HTML semantics and the <strong>objectives</strong> below.</p><h5 id="objectives">Objectives</h5><ol><li><p><strong>Component Structure:</strong></p><ul><li><p>Develop a functional React component named <code class="language-javascript">App</code> as the main application container.</p></li><li><p>Import necessary React libraries and modules.</p></li><li><p>The main application container <code class="language-javascript">div</code> should have <code class="language-javascript">App</code> as a class.</p></li></ul></li><li><p><strong>Header Section:</strong></p><ul><li><p>Implement a header section using the <code class="language-javascript">&lt;header&gt;</code> HTML tag as the container.</p></li><li><p>Include an <code class="language-javascript">&lt;h1&gt;</code> tag for the title and name your application such as "SuperFlats".</p></li></ul></li><li><p><strong>Main Section:</strong></p><ul><li><p>Create a main section within the <code class="language-javascript">&lt;main&gt;</code> HTML tag to house the list of flats.</p></li><li><p>Include an <code class="language-javascript">&lt;h2&gt;</code> tag for the flats list.</p></li><li><p>The text should say "Flat List".</p></li></ul></li><li><p><strong>Flats List:</strong></p><ul><li><p>Display a list of flats using the <code class="language-javascript">&lt;ul&gt;</code> (unordered list) HTML element.</p></li><li><p>Iterate over the <code class="language-javascript">flats</code> array, rendering a list item (<code class="language-javascript">&lt;li&gt;</code>) for each flat.</p></li></ul></li><li><p><strong>Flat Information:</strong></p><ul><li><p>For each flat item, display information such as the flat's name, location, price, availability status, and an image.</p></li><li><p>The flat name should be a <code class="language-javascript">&lt;h3&gt;</code> tag while the location, price, and availability should be a <code class="language-javascript">&lt;p&gt;</code> tag.</p></li></ul></li><li><p><strong>Availability Status:</strong></p><ul><li><p>Dynamically display the availability status based on the <code class="language-javascript">available</code> property of each flat. If <code class="language-javascript">available</code> is <code class="language-javascript">true</code>, show "Available"; otherwise, show "Not Available."</p></li></ul></li><li><p><strong>Image Display:</strong></p><ul><li><p>Display the image of each flat using the <code class="language-javascript">&lt;img&gt;</code> HTML element.</p></li><li><p>Add the <code class="language-javascript">alt</code> attribute to the image for accessibility with the value as the flat name.</p></li></ul></li><li><p><strong>Key Attribute:</strong></p><ul><li><p>Although tests don't check, it's best practice to assign a unique <code class="language-javascript">key</code> attribute to each list item using the <code class="language-javascript">id</code> property of the flat object for efficient React virtual DOM updates.</p></li></ul></li></ol><h5 id="examples">Examples</h5><p><strong>Example 1</strong>:</p><p><picture><source media="(max-width: 480px)" srcset="https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/480x/-/format/webp/ 1x,https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/960x/-/format/webp/ 2x,https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/1440x/-/format/webp/ 3x" type="image/webp"/><source media="(max-width: 800px)" srcset="https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/800x/-/format/webp/ 1x,https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/1600x/-/format/webp/ 2x,https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/2400x/-/format/webp/ 3x" type="image/webp"/><source srcset="https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/1100x/-/format/webp/ 1x,https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/2200x/-/format/webp/ 2x,https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/-/stretch/off/-/resize/3000x/-/format/webp/ 3x" type="image/webp"/><img alt="" height="1334" src="https://ucarecdn.com/4be4e1a8-0746-41e4-b94a-ef3cf3bc79ca/" width="1536"/></picture></p><p></p>
+</div>

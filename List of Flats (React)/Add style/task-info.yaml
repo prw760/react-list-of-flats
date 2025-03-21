@@ -1,0 +1,14 @@
+type: edu
+files:
+  - name: src/App.js
+    visible: true
+    learner_created: false
+  - name: src/index.js
+    visible: false
+    learner_created: false
+  - name: test/test.js
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/44386#comment
+status: Unchecked
+record: -1

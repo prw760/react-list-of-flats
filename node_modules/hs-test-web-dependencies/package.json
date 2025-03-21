@@ -1,0 +1,12 @@
+{
+  "name": "hs-test-web-dependencies",
+  "version": "1.0.0",
+  "description": "Dependencies for checking web problems on Hyperskill",
+  "scripts": {},
+  "author": "Vladimir Turov",
+  "dependencies": {
+    "jest": ">=24.9.0",
+    "@types/jest": ">=24.9.0",
+    "puppeteer": ">=2.0.0"
+  }
+}

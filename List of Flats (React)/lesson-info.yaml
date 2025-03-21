@@ -1,0 +1,7 @@
+type: framework
+content:
+  - Render the list of flats
+  - Show the form for a new flat
+  - Add the new flat to the list
+  - Add style
+current_task: 2

@@ -1,0 +1,14 @@
+type: hyperskill
+title: List of Flats (React)
+language: English
+summary: "<p>Welcome to the List of Flats, a simple React-based application that allows\
+  \ you to explore a curated list of flats available for rent. Whether you're looking\
+  \ for a cozy apartment, a modern loft, or a charming studio, this application provides\
+  \ you with key details to help you make an informed decision.</p><br/><br/>Learn\
+  \ more at <a href=\"https://hyperskill.org/projects/444?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card\"\
+  >https://hyperskill.org/projects/444</a>"
+programming_language: JavaScript
+content:
+  - List of Flats (React)
+mode: Study
+yaml_version: 2
